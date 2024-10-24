@@ -1,0 +1,18 @@
+[package]
+name = "just-enough-emojis"
+version = "1.0.0"
+edition = "2021"
+description = "text to emoji cli"
+license = "MIT"
+homepage = "https://waradu.dev"
+repository = "https://github.com/Waradu/just-enough-emojis"
+readme = "README.md"
+keywords = ["emoji","cli","text"]
+authors = ["Waradu"]
+
+[dependencies]
+ureq = "2"
+
+[[bin]]
+name = "emoji"
+path = "src/main.rs"
