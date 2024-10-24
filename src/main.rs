@@ -1,9 +1,9 @@
 fn main() {
     let args: Vec<String> = std::env::args().collect();
-    let text = if let Some(pos) = args.iter().position(|x| x == "--text") {
-        args.get(pos + 1).expect("No text provided after --text")
+    let text = if args.len() > 1 {
+        &args[1]
     } else {
-        eprintln!("Usage: program_name --text \"Your text here\"");
+        eprintln!("Usage: program_name \"Your text here\"");
         return;
     };
 

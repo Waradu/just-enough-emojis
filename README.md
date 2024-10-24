@@ -2,5 +2,5 @@
 <sup>Uses AI</sup>
 
 Usage:
-`emoji --text "hey what's up?"`
+`emoji "hey what's up?"`
 **Result:** "👋🤔"
